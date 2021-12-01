@@ -402,15 +402,28 @@
             </button>
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form action="#" class="modal-form">
-                <input type="text" name="user-name" class="modal-form-input" required>
-                <input type="tel" name="tel" class="modal-form-input" required>
-                <input type="email" name="email" class="modal-form-input" required>
-                <input type="text" name="comment" class="modal-form-input input-comment">
-                <label for="consent">
-                    <input type="checkbox" name="consent" value="">
-                    Соглашаюсь с рассылкой и принимаю <a>Условия договора</a>
-                </label>
-                <button type="submit">Отправить</button>
+                <div class="modal-field">
+                    <label class="form-input-text" for="name">Имя</label>
+                    <input id="name" type="text" name="user-name" class="modal-form-input" required>
+                </div>
+                <div class="modal-field">
+                    <label class="form-input-text" for="tel">Телефон</label>
+                    <input id="tel" type="tel" name="tel" class="modal-form-input" required>
+                </div>
+                <div class="modal-field">
+                    <label class="form-input-text" for="email">Почта</label>
+                    <input id="email" type="email" name="email" class="modal-form-input" required>
+                </div>
+                <div class="modal-field">
+                    <label class="form-input-text" for="comment">Комментарий</label>
+                    <textarea id="comment" type="text" name="comment" class="modal-form-text" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="modal-field-last">
+                    <input id="consent" type="checkbox" name="consent" value="" class="checkbox-consent">
+                    <label class="form-input-consent" for="consent">Соглашаюсь с рассылкой и принимаю <a>Условия договора</a>
+                    </label>
+                </div>
+                <button class="modal-send" type="submit">Отправить</button>
             </form>
         </div>
     </div>
