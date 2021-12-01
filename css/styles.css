@@ -766,7 +766,7 @@ span.foot {
 	background-color: transparent;
 }
 .modal-title {
-	margin-bottom: 30px;
+margin-bottom: 12px;
 font-weight: 700;
 font-size: 20px;
 line-height: 1.15;
@@ -775,10 +775,15 @@ letter-spacing: 0.03em;
 
 color: var(--second-color) ;
 }
+.modal-field {
+margin-bottom: 10px;
+}
+.modal-field-last {
+	margin-bottom: 30px;
+}
 .modal-form-input {
 	width: 100%;
 	height: 40px;
-	margin-bottom: 28px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	box-sizing: border-box;
     border-radius: 4px;
@@ -786,6 +791,44 @@ color: var(--second-color) ;
 	color: var(--second-color);
 	outline: none;
 }
-.input-comment {
-height: 120px;
+.modal-form-text {
+	width: 100%;
+	height: 120px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 16px;
+	color: var(--second-color);
+	outline: none;
+	resize: none;
+}
+.modal-form-text::placeholder {
+	font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+.form-input-text {
+	margin-bottom: 4px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: var(--text-color);
+}
+.form-input-consent {
+font-weight: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+
+color: var(--text-color);
+}
+.modal-send {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
