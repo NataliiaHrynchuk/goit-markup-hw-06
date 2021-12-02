@@ -483,7 +483,7 @@ span.foot {
 	display: flex;
 }
 .address-logo {
-	margin-right: 70px;
+	
 }
 .foot-link {
 	display: block;
@@ -549,9 +549,10 @@ span.foot {
 	flex-wrap: wrap;
 	width: 231px;
 	margin-top: 20px;
+	margin-right: 70px;
 }
 .social-slogan {
-	margin-top: 22px;
+	margin-top: 12px;
 }
 .slogan {
 	width: 145px;
@@ -586,6 +587,53 @@ span.foot {
 }
 .slogan-social-icon {
 	fill: var(--main-color);
+}
+.email-fild {
+	
+	width: 570px;
+	height: 86px;
+    margin-top: 12px;
+	margin-left: 93px;
+}
+.email-slogan {
+   margin-bottom: 20px;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+
+   color: var(--main-color);
+}
+.email-input-slogan {
+   display: flex;
+   justify-content: space-between;
+   
+}
+.email-input {
+	width: 358px;
+	height: 50px;
+	background-color: var(--foot-bg-color);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+.email-input-btn {
+	display: block;
+	width: 200px;
+	height: 50px;
+	background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+	
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.06em;
+
+    color: var(--main-color);
 }
 /*------------Портфоліо------------*/
 
@@ -765,6 +813,10 @@ span.foot {
 	border-radius: 50%;
 	background-color: transparent;
 }
+.data-modal-close:hover .close-icon,
+.data-modal-close:focus .close-icon{
+	fill: var(--accent-color);
+}
 .modal-title {
 margin-bottom: 12px;
 font-weight: 700;
@@ -777,6 +829,7 @@ color: var(--second-color) ;
 }
 .modal-field {
 margin-bottom: 10px;
+position: relative;
 }
 .modal-field-last {
 	margin-bottom: 30px;
@@ -819,6 +872,15 @@ margin-bottom: 10px;
 
     color: var(--text-color);
 }
+.input-icon {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-color: violet;
+}
 .form-input-consent {
 font-weight: normal;
 font-size: 14px;
@@ -827,8 +889,22 @@ letter-spacing: 0.03em;
 
 color: var(--text-color);
 }
-.modal-send {
+.modal-send-btn {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	width: 200px;
+	height: 50px;
+	background-color: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: var(--timing-function);
+}
+.modal-send-btn:hover,
+.modal-send-btn:focus {
+	background-color: var(--btn-hover-color);
+	
 }
