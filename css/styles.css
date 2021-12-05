@@ -849,6 +849,8 @@ margin-bottom: 10px;
 position: relative;
 }
 .modal-field-last {
+	display: flex;
+	align-items: center;
 	margin-bottom: 30px;
 }
 .modal-form-input {
@@ -954,6 +956,9 @@ position: relative;
 	margin-right: 7px;
 	border: 2px solid var(--second-color);
 	border-radius: 2px;
+
+	position: relative;
+	top: 4px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -975,7 +980,6 @@ position: relative;
 	margin-left: 5px;
 }
 .modal-send-btn {
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 200px;
@@ -983,10 +987,22 @@ position: relative;
 	background-color: var(--accent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+	
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: var(--main-color);
+
+	display: flex;
+    align-items: center;
+    justify-content: center;
 
 	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function: var(--timing-function);
+	
 }
 .modal-send-btn:hover,
 .modal-send-btn:focus {
