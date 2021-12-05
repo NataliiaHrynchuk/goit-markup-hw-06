@@ -945,7 +945,8 @@ position: relative;
 	overflow: hidden;
 }
 .check-icon {
-fill: #000000;	
+	width: 11px;
+	height: 8px;	
 }
 .check-item {
 	width: 16px;
@@ -961,10 +962,11 @@ fill: #000000;
 	transition-duration: 250ms;
 	transition-timing-function: var(--timing-function);
 }
-	}
+	
 .checkbox-consent:checked + .check-text .check-item {
 	background-color: var(--accent-color);
 	border: none;
+	fill: var(--main-color);
 }
 
 .policy {
