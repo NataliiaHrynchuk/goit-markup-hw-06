@@ -627,10 +627,7 @@ span.foot {
     font-size: 16px;
     line-height: 1.25;
 
-
-
-
-color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 .email-input-btn {
 	display: flex;
@@ -642,7 +639,6 @@ color: rgba(255, 255, 255, 0.6);
 	background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-	
 	
     font-weight: 700;
     font-size: 16px;
@@ -934,6 +930,10 @@ position: relative;
 
     color: var(--text-color);
 }
+.check-text:hover .check-item,
+.check-text:focus .check-item {
+    border: 2px solid var(--accent-color);
+}
 .visually-hidden{
 	position: absolute;
 	width: 1px;
@@ -955,7 +955,12 @@ fill: #000000;
 	border-radius: 2px;
 	display: flex;
 	align-items: center;
-	justify-content: center;	
+	justify-content: center;
+	
+	transition-property: border;
+	transition-duration: 250ms;
+	transition-timing-function: var(--timing-function);
+}
 	}
 .checkbox-consent:checked + .check-text .check-item {
 	background-color: var(--accent-color);
